@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary-dark text-gray-100 font-sans;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-primary-medium rounded-2xl p-6 shadow-lg;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-accent-coral to-accent-pink text-white font-semibold px-6 py-3 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-primary-medium text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary-light hover:text-primary-dark transition-all duration-300;
+  }
+  
+  .stat-card {
+    @apply bg-gradient-to-br from-accent-pink to-accent-coral rounded-2xl p-6 shadow-xl;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2C2830;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F58F7C;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F2C4CE;
+}
+
+/* Animations */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.shimmer {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(to right, #2C2830 0%, #4F4F51 50%, #2C2830 100%);
+  background-size: 1000px 100%;
+}

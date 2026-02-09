@@ -1,0 +1,18 @@
+# FastAPI backend
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+websockets==12.0
+
+# Core ML stack (Python 3.10 compatible)
+numpy==1.26.4
+opencv-python==4.8.1.78
+Pillow==9.5.0
+
+# PyTorch (compatible with Ultralytics 8.0.x)
+torch==2.1.2
+torchvision==0.16.2
+torchaudio==2.1.2
+
+# YOLO
+ultralytics==8.0.196
